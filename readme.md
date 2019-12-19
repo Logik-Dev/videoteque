@@ -24,20 +24,67 @@ Le backend propose plusieurs __endpoints__ remplissant le contrat __CRUD__:
 
 - ```/api/movies/add```
 
+```
+HTTP/1.0 201 OK
+Content-Type: application/json
+{
+    responseText: "film ajouté aux favoris"
+}
+```
+
 *READ*
 
 - ```/api/movies/find```
 - ```/api/movies/favorite/all```
 - ```/api/movies/wanted/all```
 
+```
+HTTP/1.0 200 OK
+Content-Type: application/json
+[
+    {
+        "id": 125,
+        "title": "Les misérables",
+        "overview": "C'est l'histoire de ...",
+        "imageUrl": "https://tmdb.org/miserables.jpg"
+        "note": 7,5,
+        "favorite": true,
+        "wanted": false
+    },
+    {
+        "id": 152,
+        "title": "Les envahisseurs",
+        "overview": "C'est l'histoire de...",
+        "imageUrl": "https://tmdb.org/envahisseurs.jpg"
+        "note": 6,8
+        "favorite": false,
+        "wanted": false
+    }
+]
+
+```
 *UPDATE*
 
 - ```/api/movies/update```
+```
+HTTP/1.0 201 OK
+Content-Type: application/json
+{
+    responseText: "Film retiré des favoris"
+}
+
+```
 
 *DELETE*
 
 - ```/api/movies/delete```
-
+```
+HTTP/1.0 201 OK
+Content-Type: application/json
+{
+    responseText: "Film supprimé de vos listes"
+}
+```
 ---
 
 ## Aperçu d'une recherche
