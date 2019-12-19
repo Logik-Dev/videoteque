@@ -1,0 +1,17 @@
+.card {
+    width: 369px;
+}
+#messages {
+    animation: fadeout linear 1.5s 1.5s forwards;
+}
+
+@keyframes fadeout{
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

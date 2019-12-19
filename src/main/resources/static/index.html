@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Vidéotèque</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="min-height: 80px;">
+        <a class="navbar-brand text-info" href="#">Top Films</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto ml-2 mt-2 mt-lg-0">
+                <li class="nav-item active" id="menu-recherche">
+                    <a class="nav-link" href="#">Recherche</a>
+                </li>
+                <li class="nav-item" id="menu-favoris">
+                    <a class="nav-link" href="#">Mes favoris</a>
+                </li>
+                <li class="nav-item" id="menu-avoir">
+                    <a class="nav-link" href="#">Films à voir</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="navbar-form">
+                <input class="form-control mr-2" type="search" id="navbar-input" placeholder="Rechercher un film">
+                <button class="btn btn-outline-success my-2 my-0" type="submit">Valider</button>
+            </form>
+        </div>
+    </nav>
+    <!--CONTENT-->
+    <div class="container mt-5">
+        <div class="row no-gutters justify-content-center" id="card-container">
+        </div>
+    </div>
+    <!--PAGINATION-->
+    <nav aria-label="Page navigation">
+        <ul class="pagination d-flex justify-content-center">
+
+        </ul>
+    </nav>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ee0622e50f.js" crossorigin="anonymous"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
