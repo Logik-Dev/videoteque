@@ -19,6 +19,7 @@ function changeActiveMenu(event) {
     switch (event.target.parentNode.id) {
 
         case 'menu-recherche':
+        	generateCards([])
             setErrorVisible(false)
             pages.lastTitle && getSearchedMovies(pages.lastTitle)
             break
