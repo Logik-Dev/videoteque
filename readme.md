@@ -12,7 +12,7 @@ La barre de navigation contient trois liens:
 --- 
 
 ## Arhchitecture
-![Architecture](./images/diagramme.png)
+![Architecture](./screenshots/diagramme.png)
 
 ---
 
@@ -42,6 +42,6 @@ Le backend propose plusieurs __endpoints__ remplissant le contrat __CRUD__:
 
 ## Aperçu d'une recherche
 
-![Application](./images/app.png)
+![Application](./screenshots/app.png)
 
 ---
